@@ -19,7 +19,7 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/usr/bin/finder-test.sh
 
 	$(INSTALL) -d $(TARGET_DIR)/etc/finder-app/conf
-	$(CP) -r $(@D)/conf/* $(TARGET_DIR)/etc/finder-app/conf/
+	cp -r $(@D)/conf/* $(TARGET_DIR)/etc/finder-app/conf/
 endef
 
 $(eval $(generic-package))
