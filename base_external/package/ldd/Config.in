@@ -1,0 +1,5 @@
+config BR2_PACKAGE_LDD
+	bool "ldd"
+	help
+	  Linux Device Drivers (ldd3) out-of-tree kernel modules.
+	  Builds and installs misc-modules and scull from assignment 7 repo.
